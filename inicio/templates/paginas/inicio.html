@@ -1,0 +1,79 @@
+<head>
+    <title>PAGINA ASOMBROSA</title>
+    <h1>Hola</h1>
+    <p>hoy es {{hoy.day}} de {{mes}} del año {{hoy.year}}</p>
+    {% if hoy.month == 1 %}
+        <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+    {% elif hoy.month == 3 %}
+        {% if hoy.day == 20 %}
+        <a href= "https://www.youtube.com/watch?v=vGUc4cP0yV4">y el video random del día es...</a>
+        {% elif hoy.day == 24 %}
+        <a href= "https://www.youtube.com/shorts/hTXF4QB4Ng8">y el video random del día es...</a>
+        {% else %}
+        <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+        {% endif %}
+    {% elif hoy.month == 4 %}
+        {% if hoy.month == 2 %}
+        <a href= "https://www.youtube.com/watch?v=r9JnqNr6gCQ">y el video random del día es...</a>
+        {% else %}
+        <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+        {% endif %}
+    {% elif hoy.month == 5 %}
+        {% if hoy.day == 4 %}
+        <a href= "https://www.youtube.com/watch?v=KmTyKNGDQqA">y el video random del día es...</a>
+        {% elif hoy.day == 5%}
+        <a href= "https://www.youtube.com/watch?v=xes0Yr3VTe0">y el video random del día es...</a>
+        {% elif hoy.day == 25%}
+        <a href= "https://www.youtube.com/watch?v=wKrjJNGtjMI">y el video random del día es...</a>
+        {% else %}
+        <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+        {% endif %}
+    {% elif hoy.month == 6 %}
+        {% if hoy.day == 15 %}
+        <a href= "https://www.youtube.com/watch?v=wu1U9Gagtbk">y el video random del día es...</a>
+        {% elif hoy.day == 20 %}
+        <a href= "https://www.youtube.com/watch?v=eLbRBH60ZPE">y el video random del día es...</a>
+        {% else %}
+        <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+        {% endif %}
+    {% elif hoy.month == 7 %}
+        {%if hoy.day == 4 %}
+        <a href= "https://www.youtube.com/watch?v=Y-3IV11_ZgA">y el video random del día es...</a>
+        {% elif hoy.day == 9 %}
+        <a href= "https://www.youtube.com/watch?v=g2JoDcxaJgM">y el video random del día es...</a>
+        {% elif hoy.day == 24 %}
+        <a href= "https://youtu.be/04zdFPePz7M?si=If87qyK5MtpZ6CuW&t=31">y el video random del día es...</a>
+        {% else %}
+        <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+        {% endif %}
+    {% elif hoy.month == 8 %}
+        {% if hoy.day == 17 %}
+        <a href="https://www.youtube.com/watch?v=OBrYouxfdbc">y el video random del día es...</a>
+        {% else %}
+        <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+        {% endif %}
+    {% elif hoy.month == 9 %}
+        {% if hoy.day == 11 %}
+        <a href= "https://www.youtube.com/watch?v=APVEo39AwKg">y el video random del día es...</a>    
+        {% else %}
+        <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+        {% endif %}
+    {% elif hoy.month == 11 %}
+        {% if hoy.day == 4 %}
+        <a href= "https://www.youtube.com/watch?v=gVIzGA58Ag8">y el video random del día es...</a>
+        {% elif hoy.day == 8 %}
+        <a href= "https://www.youtube.com/watch?v=z9m_kbFh4LM">y el video random del día es...</a>
+        {% elif hoy.day == 10 %}
+        <a href="https://www.youtube.com/watch?v=GP-oVqqBMXQ">y el video random del día es...</a> 
+        {% elif hoy.day == 20 %}
+        <a href= "https://www.youtube.com/watch?v=013eBgzoDwY">y el video random del día es...</a>
+        {% else %}
+        <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+        {% endif %}
+    {% else %}
+    <a href= "https://www.youtube.com/watch?v=QgkPPjUxCxk">y el video random del día es...</a>
+    {% endif %}    
+</head>
+<body>
+    <h2><a href="{% url 'personajes' %}">personajes</a><h2>
+</body>
